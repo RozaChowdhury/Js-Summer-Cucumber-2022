@@ -1,0 +1,105 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662398544895' stop='1662398553545'>
+    <name>Login</name>
+    <title>Login</title>
+    <test-cases>
+        <test-case start='1662398544912' status='passed' stop='1662398549232'>
+            <name>Verify login fields are enabled by default</name>
+            <title>Verify login fields are enabled by default</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-105.0.0.0'/>
+            </parameters>
+            <steps>
+                <step start='1662398544915' status='passed' stop='1662398549169'>
+                    <name>Given I am on facebook landing page</name>
+                    <title>Given I am on facebook landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398549169' status='passed' stop='1662398549200'>
+                    <name>Then I verify login username field is enabled</name>
+                    <title>Then I verify login username field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398549200' status='passed' stop='1662398549216'>
+                    <name>And I verify login password field is enabled</name>
+                    <title>And I verify login password field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398549216' status='passed' stop='1662398549231'>
+                    <name>And I verify login button field is enabled</name>
+                    <title>And I verify login button field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662398549232' status='broken' stop='1662398553544'>
+            <name>Verify user gets error for invalid credentials</name>
+            <title>Verify user gets error for invalid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-105.0.0.0'/>
+            </parameters>
+            <steps>
+                <step start='1662398549233' status='passed' stop='1662398552478'>
+                    <name>Given I am on facebook landing page</name>
+                    <title>Given I am on facebook landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398552479' status='passed' stop='1662398552619'>
+                    <name>When I enter "@%$^^^" as username</name>
+                    <title>When I enter "@%$^^^" as username</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398552619' status='passed' stop='1662398552708'>
+                    <name>And I enter "invalid pwd" as password</name>
+                    <title>And I enter "invalid pwd" as password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398552708' status='passed' stop='1662398552805'>
+                    <name>And I click login button</name>
+                    <title>And I click login button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398552805' status='broken' stop='1662398553544'>
+                    <name>Then I verify error is displayed</name>
+                    <title>Then I verify error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Protocol error (Runtime.getProperties): Cannot find context with specified id</message>
+                <stack-trace>Protocol error (Runtime.getProperties): Cannot find context with specified id
+                ProtocolError: Protocol error (Runtime.getProperties): Cannot find context with specified id
+                    at /Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:230:24
+                    at new Promise (&lt;anonymous>)
+                    at CDPSession.send (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:226:16)
+                    at JSHandle.getProperties (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/puppeteer-core/lib/cjs/puppeteer/common/JSHandle.js:159:45)
+                    at ElementHandle.$x (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/puppeteer-core/lib/cjs/puppeteer/common/JSHandle.js:870:46)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async DOMWorld.$x (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/puppeteer-core/lib/cjs/puppeteer/common/DOMWorld.js:115:23)
+                    at async DevToolsDriver.findElement (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/devtools/build/utils.js:86:16)
+                    at async Browser.wrappedCommand (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/devtools/build/devtoolsdriver.js:128:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

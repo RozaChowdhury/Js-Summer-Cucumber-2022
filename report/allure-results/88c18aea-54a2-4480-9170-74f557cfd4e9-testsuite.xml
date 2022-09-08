@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662398858048' stop='1662398865358'>
+    <name>Login</name>
+    <title>Login</title>
+    <test-cases>
+        <test-case start='1662398858066' status='passed' stop='1662398861842'>
+            <name>Verify login fields are enabled by default</name>
+            <title>Verify login fields are enabled by default</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-105.0.0.0'/>
+            </parameters>
+            <steps>
+                <step start='1662398858069' status='passed' stop='1662398861785'>
+                    <name>Given I am on facebook landing page</name>
+                    <title>Given I am on facebook landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398861785' status='passed' stop='1662398861814'>
+                    <name>Then I verify login username field is enabled</name>
+                    <title>Then I verify login username field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398861814' status='passed' stop='1662398861827'>
+                    <name>And I verify login password field is enabled</name>
+                    <title>And I verify login password field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398861827' status='passed' stop='1662398861841'>
+                    <name>And I verify login button field is enabled</name>
+                    <title>And I verify login button field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662398861842' status='broken' stop='1662398865357'>
+            <name>Verify user gets error for invalid credentials</name>
+            <title>Verify user gets error for invalid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-105.0.0.0'/>
+            </parameters>
+            <steps>
+                <step start='1662398861842' status='passed' stop='1662398865076'>
+                    <name>Given I am on facebook landing page</name>
+                    <title>Given I am on facebook landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398865076' status='passed' stop='1662398865198'>
+                    <name>When I enter "@%$^^^" as username</name>
+                    <title>When I enter "@%$^^^" as username</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398865198' status='passed' stop='1662398865294'>
+                    <name>And I enter "invalid pwd" as password</name>
+                    <title>And I enter "invalid pwd" as password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398865294' status='passed' stop='1662398865355'>
+                    <name>And I click login button</name>
+                    <title>And I click login button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662398865355' status='broken' stop='1662398865357'>
+                    <name>Then I verify error is displayed</name>
+                    <title>Then I verify error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: selector needs to be typeof `string` or `function`</message>
+                <stack-trace>Error: selector needs to be typeof `string` or `function`
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

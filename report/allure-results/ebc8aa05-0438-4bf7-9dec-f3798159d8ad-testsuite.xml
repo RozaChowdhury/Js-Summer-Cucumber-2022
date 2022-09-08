@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662593919851' stop='1662593935523'>
+    <name>Hotels</name>
+    <title>Hotels</title>
+    <test-cases>
+        <test-case start='1662593919866' status='broken' stop='1662593935521'>
+            <name>Question 1</name>
+            <title>Question 1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662593919868' status='passed' stop='1662593927156'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662593927156' status='passed' stop='1662593930459'>
+                    <name>When I click on Learn about Hotels.com Rewards</name>
+                    <title>When I click on Learn about Hotels.com Rewards</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662593930460' status='passed' stop='1662593930477'>
+                    <name>Then I verify Hotels Rewards opened in a new window</name>
+                    <title>Then I verify Hotels Rewards opened in a new window</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662593930477' status='passed' stop='1662593935483'>
+                    <name>When I click on Join Now</name>
+                    <title>When I click on Join Now</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662593935483' status='passed' stop='1662593935520'>
+                    <name>Then I verify form is blank</name>
+                    <title>Then I verify form is blank</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662593935521' status='broken' stop='1662593935521'>
+                    <name>Then I verify Continue button is not enabled</name>
+                    <title>Then I verify Continue button is not enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify Continue button is not enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify Continue button is not enabled" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/features/Hotels/hotels.feature):1:1
+                	at Scenario(Question 1):3:5
+                	at Step(I verify Continue button is not enabled):9:13
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

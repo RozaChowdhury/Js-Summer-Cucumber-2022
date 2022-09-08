@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662418132245' stop='1662418136988'>
+    <name>Login</name>
+    <title>Login</title>
+    <test-cases>
+        <test-case start='1662418132260' status='passed' stop='1662418136987'>
+            <name>Verify login fields are enabled by default</name>
+            <title>Verify login fields are enabled by default</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-105.0.0.0'/>
+            </parameters>
+            <steps>
+                <step start='1662418132262' status='passed' stop='1662418136788'>
+                    <name>Given I am on facebook landing page</name>
+                    <title>Given I am on facebook landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662418136788' status='passed' stop='1662418136908'>
+                    <name>Then I verify login username field is enabled</name>
+                    <title>Then I verify login username field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662418136908' status='passed' stop='1662418136960'>
+                    <name>And I verify login password field is enabled</name>
+                    <title>And I verify login password field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662418136960' status='passed' stop='1662418136986'>
+                    <name>And I verify login button field is enabled</name>
+                    <title>And I verify login button field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
