@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662601102219' stop='1662601108158'>
+    <name>Darksky</name>
+    <title>Darksky</title>
+    <test-cases>
+        <test-case start='1662601102236' status='broken' stop='1662601108154'>
+            <name>Question 3</name>
+            <title>Question 3</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662601102239' status='passed' stop='1662601108151'>
+                    <name>Given I am on darksky landing page</name>
+                    <title>Given I am on darksky landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662601108151' status='broken' stop='1662601108152'>
+                    <name>When I scroll to Today's timeline and click on + button</name>
+                    <title>When I scroll to Today's timeline and click on + button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662601108153' status='broken' stop='1662601108154'>
+                    <name>Then I verify minTemp on and in Today's timeline is same</name>
+                    <title>Then I verify minTemp on and in Today's timeline is same</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662601108154' status='broken' stop='1662601108154'>
+                    <name>Then I verify maxTemp on and in Today's timeline is same</name>
+                    <title>Then I verify maxTemp on and in Today's timeline is same</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify maxTemp on and in Today's timeline is same" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify maxTemp on and in Today's timeline is same" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/features/Darksky/darksky.feature):1:1
+                	at Scenario(Question 3):8:6
+                	at Step(I verify maxTemp on and in Today's timeline is same):13:6
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

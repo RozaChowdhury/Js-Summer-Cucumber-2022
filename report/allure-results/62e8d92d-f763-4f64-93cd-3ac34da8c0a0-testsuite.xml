@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662596970680' stop='1662596977029'>
+    <name>Darksky</name>
+    <title>Darksky</title>
+    <test-cases>
+        <test-case start='1662596970692' status='broken' stop='1662596977025'>
+            <name>Question 2</name>
+            <title>Question 2</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662596970695' status='passed' stop='1662596977013'>
+                    <name>Given I am on darksky landing page</name>
+                    <title>Given I am on darksky landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662596977013' status='broken' stop='1662596977025'>
+                    <name>Then I verify timeline has 12 data point with 2 hour gap from current hour</name>
+                    <title>Then I verify timeline has 12 data point with 2 hour gap from current hour</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: hours is not iterable</message>
+                <stack-trace>TypeError: hours is not iterable
+                    at DarkskyHomepage.verifyTwoHourGap (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/Pages/Darksky/DarkskyHomepage.js:15:28)
+                    at World.&lt;anonymous> (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Facebook/darkskySD.js:10:21)
+                    at async wrapPromiseWithTimeout (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/time.js:67:12)
+                    at async Object.run (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+                    at async Object.run (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+                    at async TestCaseRunner.invokeStep (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)
+                    at async /Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:163:48</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

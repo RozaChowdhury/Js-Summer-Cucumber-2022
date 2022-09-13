@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662599537224' stop='1662599544493'>
+    <name>Darksky</name>
+    <title>Darksky</title>
+    <test-cases>
+        <test-case start='1662599537238' status='passed' stop='1662599544492'>
+            <name>Question 2</name>
+            <title>Question 2</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662599537245' status='passed' stop='1662599543843'>
+                    <name>Given I am on darksky landing page</name>
+                    <title>Given I am on darksky landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662599543843' status='passed' stop='1662599544491'>
+                    <name>Then I verify timeline has 12 data point with 2 hour gap from current hour</name>
+                    <title>Then I verify timeline has 12 data point with 2 hour gap from current hour</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

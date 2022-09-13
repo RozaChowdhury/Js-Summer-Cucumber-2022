@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662599682561' stop='1662599689772'>
+    <name>Darksky</name>
+    <title>Darksky</title>
+    <test-cases>
+        <test-case start='1662599682578' status='failed' stop='1662599689768'>
+            <name>Question 2</name>
+            <title>Question 2</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662599682580' status='passed' stop='1662599689125'>
+                    <name>Given I am on darksky landing page</name>
+                    <title>Given I am on darksky landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662599689125' status='failed' stop='1662599689768'>
+                    <name>Then I verify timeline has 12 data point with 2 hour gap from current hour</name>
+                    <title>Then I verify timeline has 12 data point with 2 hour gap from current hour</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Not 2 hour intervals: expected [ '\'\'', 11, '\'\'', 1, '\'\'', …(6) ] to deeply equal [ Array(11) ]</message>
+                <stack-trace>AssertionError: Not 2 hour intervals: expected [ '\'\'', 11, '\'\'', 1, '\'\'', …(6) ] to deeply equal [ Array(11) ]
+                    + expected - actual
+                
+                     [
+                    -  "''"
+                    -  11
+                    -  "''"
+                    -  1
+                    -  "''"
+                    -  3
+                    -  "''"
+                    -  5
+                    -  "''"
+                    -  7
+                    -  "''"
+                    +  ""
+                    +  "11"
+                    +  ""
+                    +  "1"
+                    +  ""
+                    +  "3"
+                    +  ""
+                    +  "5"
+                    +  ""
+                    +  "7"
+                    +  ""
+                     ]
+                
+                    at DarkskyHomepage.verifyTwoHourGap (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/Pages/Darksky/DarkskyHomepage.js:48:64)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async World.&lt;anonymous> (/Users/chowdhuryroza/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Facebook/darkskySD.js:10:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
